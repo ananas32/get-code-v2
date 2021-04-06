@@ -39,6 +39,8 @@ class MakeParse extends Command
      */
     public function handle()
     {
-        Excel::import(new GetCodeCsv, storage_path(). '/app/getcode.csv');
+        \App\Jobs\ImportCsv::dispatch();
+
+//        Excel::import(new GetCodeCsv, storage_path(). '/app/getcode.csv');
     }
 }
