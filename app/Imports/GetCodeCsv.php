@@ -19,7 +19,7 @@ class GetCodeCsv implements ToCollection, WithChunkReading, WithStartRow
 
     public function chunkSize(): int
     {
-        return 3000;
+        return 30000;
     }
 
     public function startRow(): int
