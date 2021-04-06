@@ -11,3 +11,5 @@ php artisan migrate
 <p>
 php artisan make:parse
 </p>
+
+php artisan queue:listen --timeout=0
